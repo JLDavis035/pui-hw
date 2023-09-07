@@ -1,0 +1,69 @@
+<!DOCTYPE html> 
+<html lang="en-us"> 
+<head> 
+    <meta charset="UTF-8">
+    <meta name="author" content="Jennifer Davis"> 
+    <link rel="stylesheet" href="style.css">
+    <title>details</title> 
+</head>
+
+<body>
+    <a href="index.html"><img class="logo" src="../assets/logo/logo-01.svg" alt="logo"></a>
+
+    <hr>
+
+<!-- The code block below acts as navigation to the main pages. There are hyperlinks to the main (index) page and the details page  -->
+    <div class="nav">
+        <a class="navtext" href="index.html"><p>PRODUCTS</p></a>
+        <a class="navtext" href="cart.html"><p>CART</p></a>
+    </div>
+
+<!-- The code blocks below display the original cinnamon roll with a text box beneath -->
+    <div class="container">
+        <p class="titlep">Original cinnamon roll</p>
+
+        <div>
+            <img class="imgdetail" src="../assets/products/original-cinnamon-roll.jpg" alt="original cinnamon roll">
+            
+            <div class="textbox">
+                <p class="detailsubtext">Customize our delicious, hand-made cinnamon roll to your liking!</p>
+            </div>
+        </div>
+
+
+<!-- The code blocks below are dropdown menus. Code reference: https://www.w3schools.com/tags/tag_select.asp -->
+        <div class="dropdown">
+            <label for="glaze" class="displaylabel">Glazing:</label>
+            <div class="glazediv">
+                <select name="glaze">
+                    <option value="Keep original">Keep original</option>
+                    <option value="Sugar milk">Sugar milk</option>
+                    <option value="Vanilla milk">Vanilla milk</option>
+                    <option value="Double chocolate">Double chocolate</option>
+                </select>
+            </div>
+
+
+            <label for="packsize" class="displaylabel">Pack size:</label>
+
+            <div class="packdiv">
+                <select name="packsize" class="packmenu">
+                    <option value="1">1</option>
+                    <option value="3">3</option>
+                    <option value="6">6</option>
+                    <option value="12">12</option>
+                </select>
+            </div>
+        </div>
+
+
+    <!-- Code block below is "add to cart" text -->
+        <div class="addcartblock">
+            <p id="addcart">$ 2.49
+                <button>Add to Cart</button>
+            </p>
+        </div>
+
+    </div>
+</body>
+</html>
