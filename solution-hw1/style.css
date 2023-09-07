@@ -84,8 +84,8 @@ button{
 /* Styling for gallery items: image spacing, hovering, text */
 .gallery{
     box-align: center;
-    margin: 50px auto;
-    padding: 8px;
+    margin: 70px auto;
+    padding: 6px;
     width: 415px;
     height: 550px;
 }
