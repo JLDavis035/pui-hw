@@ -109,6 +109,7 @@ button{
     width: 400px;
     font-size: 100%;
     line-height: 3px;
+    word-wrap: break-word;
 }
 
 /* Styling for displayed cart items: text and images  */
