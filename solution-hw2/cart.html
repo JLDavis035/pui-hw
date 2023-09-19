@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html lang="en-us"> 
+<head> 
+    <meta charset="UTF-8">
+    <meta name="author" content="Jennifer Davis"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Bun Bun Bake Shop</title> 
+</head>
+
+
+<body>
+    <div class="flexnav">
+    
+        <!-- The code block below is the left flexbox child, which contains the logo with a hyperlink to the products page -->
+            <div class="navleft">
+                <a class="logo" href="index.html"><img class="logo" src="../assets/logo/logo-01.svg" alt="logo"></a>
+            </div>
+    
+        <!-- The code block below is the right flexbox child, and also acts as a flexbox parent for the product and cart child, hr child, and p child -->
+            <div class="navright">
+                <div class="flexnavtext">
+                <!-- The code block below acts as navigation to the main pages. There are hyperlinks to the main (index) page and the details page  -->
+                    <div class="navtextbox">
+                        <p><a class="navtext" href="index.html">PRODUCTS</a></p>
+                    </div>
+                    <div class="navtextbox"> 
+                        <p><a class="navclicked" href="cart.html">CART</a></p>
+                    </div>
+                </div>
+    
+                <!-- The line of code below displays the line towards the top of the page, contained within the flexbox -->
+                <hr class="galleryline">
+    
+                <div class="titlepbox">
+                    <p class="titlep">Shopping cart</p>
+                </div>
+            </div>
+        </div>
+
+<!-- The code block below is the shopping cart section, which shows the 2 cinnamon rolls and their information. Each image and grouped text have their own div to section them out better -->
+    <div class="container">
+
+        <div class="flexcart">
+            <div class="flexcartrow">
+                <div class="flexcartimg">
+                <img class="imgcart" src="../assets/products/original-cinnamon-roll.jpg" alt="original cinnamon roll">
+                <p class="remove">Remove</p>
+                </div>
+
+                <div class="flexrowtext">
+                    <p class="subtext">Original Cinnamon Roll</p>
+                    <p class="subtext">Glazing: Keep original</p>
+                    <p class="subtext">Pack Size: 1</p>
+                </div>
+
+                <div class="flexrowprice">
+                    <p class="imgprice">$ 2.49</p>
+                </div>
+            </div>
+
+        <div class="flexcartrow">
+            <div class="flexcartimg">
+                <img class="imgcart" src="../assets/products/double-chocolate-cinnamon-roll.jpg" alt="double-chocolate cinnamon roll">
+                    <p class="remove">Remove</p>
+                </div>
+                
+                    <div class="flexrowtext">
+                        <p class="subtext">Double Chocolate Cinnamon Roll</p>
+                        <p class="subtext">Glazing: Sugar milk</p>
+                        <p class="subtext">Pack Size: 6</p>
+                    </div>
+
+                <div class="flexrowprice">
+                    <p class="imgprice">$ 27.45</p>
+                </div>
+            </div>
+
+            <div class="flexhr">
+                <hr class="hrBottom">
+            </div>
+
+            <div class="flexcarttotal">
+                <div>
+                    <p class="carttotal">Total: </p>
+                </div>
+                <div>
+                    <p class="cartprice">$ 29.94</p>
+                </div>
+            </div>
+
+            <div class="flexcartrowleft">
+                <div>
+                    <button class="b2">Checkout</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>

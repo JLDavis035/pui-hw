@@ -1,0 +1,94 @@
+<!DOCTYPE html> 
+<html lang="en-us"> 
+<head> 
+    <meta charset="UTF-8">
+    <meta name="author" content="Jennifer Davis"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Bun Bun Bake Shop</title> 
+</head>
+
+<body>
+    <div class="pagecontainer">
+
+        <!-- The code block below acts as a flexbox parent for the logo on the top left and features on the top right of the page. -->
+        <div class="flexnav">
+    
+        <!-- The code block below is the left flexbox child, which contains the logo with a hyperlink to the products page -->
+            <div class="navleft">
+                <a class="logo" href="index.html"><img class="logo" src="../assets/logo/logo-01.svg" alt="logo"></a>
+            </div>
+    
+        <!-- The code block below is the right flexbox child, and also acts as a flexbox parent for the product and cart child, hr child, and p child -->
+            <div class="navright">
+                <div class="flexnavtext">
+                <!-- The code block below acts as navigation to the main pages. There are hyperlinks to the main (index) page and the details page  -->
+                    <div class="navtextbox">
+                        <p><a class="navclicked" href="index.html">PRODUCTS</a></p>
+                    </div>
+                    <div class="navtextbox"> 
+                        <p><a class="navtext" href="cart.html">CART</a></p>
+                    </div>
+                </div>
+    
+                <!-- The line of code below displays the line towards the top of the page, contained within the flexbox -->
+                <hr class="galleryline">
+    
+                <div class="titlepbox">
+                    <p class="titlep">Our hand-made cinnamon rolls</p>
+                </div>
+            </div>
+        </div>
+    
+    <!-- The code blocks below display each cinnamon roll picture, name, and price -->
+        <div class="gallerycontainer">
+            <div class="gallery">
+                <a href="details.html"><img class="imggallery" src="../assets/products/original-cinnamon-roll.jpg" alt="original cinnamon roll"></a>
+                <div class="gallerytxt">
+                    <a href="details.html"><p>Original cinnamon roll</p></a>
+                    <p>$ 2.49</p>
+                </div>
+            </div>
+    
+            <div class="gallery">
+                <a href="details.html"><img class="imggallery" src="../assets/products/apple-cinnamon-roll.jpg" alt="apple cinnamon roll"></a>
+                <div class="gallerytxt">
+                    <a href="details.html"><p>Apple cinnamon roll</p></a>
+                    <p>$ 3.49</p>
+                </div>
+            </div>
+    
+            <div class="gallery">
+                <a href="details.html"><img class="imggallery" src="../assets/products/raisin-cinnamon-roll.jpg" alt="raisin cinnamon roll"></a>
+                <div class="gallerytxt">
+                    <a href="details.html"><p>Raisin cinnamon roll</p></a>
+                    <p>$ 2.99</p>
+                </div>
+            </div>
+    
+            <div class="gallery">
+                <a href="details.html"><img class="imggallery" src="../assets/products/walnut-cinnamon-roll.jpg" alt="walnut cinnamon roll"></a>
+                <div class="gallerytxt">
+                    <a href="details.html"><p>Walnut cinnamon roll</p></a>
+                    <p>$ 3.49</p>
+                </div>
+            </div>
+    
+            <div class="gallery">
+                <a href="details.html"><img class="imggallery" src="../assets/products/double-chocolate-cinnamon-roll.jpg" alt="double-chocolate cinnamon roll"></a>
+                <div class="gallerytxt">
+                    <a href="details.html"><p>Double-chocolate</p><p>cinnamon roll</p></a>
+                    <p>$ 3.99</p>
+                </div>
+            </div>
+    
+            <div class="gallery">
+                <a href="details.html"><img class="imggallery" src="../assets/products/strawberry-cinnamon-roll.jpg" alt="strawberry cinnamon roll"></a>
+                <div class="gallerytxt">
+                    <a href="details.html"><p>Strawberry cinnamon roll</p></a>
+                    <p>$ 3.99</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

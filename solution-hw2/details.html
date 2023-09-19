@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+<html lang="en-us"> 
+<head> 
+    <meta charset="UTF-8">
+    <meta name="author" content="Jennifer Davis"> 
+    <link rel="stylesheet" href="style.css">
+    <title>details</title> 
+</head>
+
+<body>
+
+<!-- The code block below acts as navigation to the main pages. There are hyperlinks to the main (index) page and the details page  -->
+<div class="flexnav">
+    
+    <!-- The code block below is the left flexbox child, which contains the logo with a hyperlink to the products page -->
+        <div class="navleft">
+            <a class="logo" href="index.html"><img class="logo" src="../assets/logo/logo-01.svg" alt="logo"></a>
+        </div>
+
+    <!-- The code block below is the right flexbox child, and also acts as a flexbox parent for the product and cart child, hr child, and p child -->
+        <div class="navright">
+            <div class="flexnavtext">
+            <!-- The code block below acts as navigation to the main pages. There are hyperlinks to the main (index) page and the details page  -->
+                <div class="navtextbox">
+                    <p><a class="navclicked" href="index.html">PRODUCTS</a></p>
+                </div>
+                <div class="navtextbox"> 
+                    <p><a class="navtext" href="cart.html">CART</a></p>
+                </div>
+            </div>
+
+            <!-- The line of code below displays the line towards the top of the page, contained within the flexbox -->
+            <hr class="galleryline">
+
+            <div class="titlepbox">
+                <p class="titlep">Original cinnamon roll</p>
+            </div>
+        </div>
+    </div>
+
+<!-- The code blocks below display the original cinnamon roll with a text box beneath -->
+    <div class="detailscontainer">
+
+        <div class="flexdetailleft">
+            <img class="imgdetail" src="../assets/products/original-cinnamon-roll.jpg" alt="original cinnamon roll">
+        </div>
+        <div class="flexdetailright">
+
+            <div class="detailtextbox">
+                <p class="detailsubtext">Customize our delicious, hand-made cinnamon roll to your liking!</p>
+            </div>
+
+            <div class="dropdown">
+                    <label for="glaze" class="displaylabel">Glazing:</label>
+                    <div class="glazediv">
+                        <select name="glaze">
+                            <option value="Keep original">Keep original</option>
+                            <option value="Sugar milk">Sugar milk</option>
+                            <option value="Vanilla milk">Vanilla milk</option>
+                            <option value="Double chocolate">Double chocolate</option>
+                        </select>
+                    </div>
+
+                <label for="packsize" class="displaylabel">Pack size:</label>
+
+                <div class="packdiv">
+                    <select name="packsize" class="packmenu">
+                        <option value="1">1</option>
+                        <option value="3">3</option>
+                        <option value="6">6</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+                
+        </div>
+
+        <div class="addcartblock">
+            <p id="addcart">$ 2.49</p>
+                <button>
+                    Add to Cart
+                </button>
+                </div>
+            </div>
+    </div>
+</div>
+
+<!-- The code blocks below are dropdown menus. Code reference: https://www.w3schools.com/tags/tag_select.asp -->
+</body>
+</html>

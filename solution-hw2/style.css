@@ -1,0 +1,386 @@
+/* styling for lines on pages */
+body{
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    color: black;
+}
+
+hr{
+    border: 4px solid black;
+}
+
+a{
+    color: black;
+}
+
+select{
+    font-size: 30px;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    width: 400px;
+    height: 60px;
+    border: 3px solid black;
+    
+}
+
+label{
+    font-size: 30px;
+}
+/* styling for buttons */
+button{
+    background-color: yellow;
+    color: black;
+    border: 3px solid;
+    font-size: 30px;
+    padding: 15px 40px;
+}
+
+
+.pagecontainer{
+    width: auto;
+}
+/* styling for the main section of each page */
+/* .container{
+    width: 925px;
+    margin: 100px auto;
+    display: block;
+    box-align: center;
+} */
+
+/* styling for logo and nav bar */
+.flexnav{
+    width: auto;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navleft{
+    width: auto;
+    margin-right: 50px;
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    padding: 30px 0 0 30px;
+}
+
+.logo{
+    width: 400px;
+}
+
+.navright{
+    width: 1000px;
+    display: flex; 
+    flex: 1 0 auto;
+    flex-direction: column;
+
+}
+
+.flexnavtext{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px 50px 0 0;
+    justify-content: flex-end;    
+}
+
+/* .clickednav{
+    width: auto;
+    /* height: 50px;
+    box-sizing: border-box;
+    align-items: center; 
+    
+    background-color: yellow;
+    */
+    /* margin: 30px 50px 20px 80px;
+} */ 
+
+.navtextbox{
+    width: auto;
+    box-sizing: border-box;
+    margin: 30px 50px 20px 80px;
+}
+
+.navtext{
+    font-size: 35px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navclicked{
+    font-size: 35px;
+    text-align: center;
+    text-decoration: none;
+    background-color: yellow;
+    
+}
+
+.titlepbox{
+    width: auto;
+    box-sizing: border-box;
+}
+
+.titlep{
+    box-sizing: border-box;
+    padding-top: 50px;
+    font-size: 50px;
+}
+
+/* Styling for gallery items: image spacing, hovering, text */
+.gallerycontainer{
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 75px;
+}
+
+.gallery{
+    flex: 0 0 auto;
+    width: 430px;
+    height: 515px;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px;
+}
+
+.gallery:hover{
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.galleryline{
+    width: 1600px;
+}
+
+.imggallery{
+    display: block;
+    box-align: center;
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    border: 5px solid black;
+}
+.gallerytxt{
+    box-align: center;
+    margin: auto;
+    width: 400px;
+    font-size: 35px;
+    line-height: 3px;
+    overflow-wrap: break-word;
+    
+}
+
+/* Styling for cart page */
+.subtext{
+    font-size: 35px;
+    line-height: 10px;
+}
+
+.imgcart{
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border: 5px solid black;
+}
+
+.flexcart{
+    width: auto;
+    margin-left: 475px;
+    margin-right: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.flexcartrow{
+    display: flex;
+    width: auto;
+    margin: 10px 10px 20px 10px;
+    flex: 1 0 auto;
+    justify-content: space-between;
+}
+
+.flexcarttotal{
+    display: flex;
+    width: auto;
+    margin: 10px 10px 30px 10px;
+    flex: 1 0 auto;
+    justify-content:space-between;
+}
+
+.flexrowtext{
+    width: auto;
+    margin: 30px 30px 30px 60px;
+    flex: 1 0 auto;
+}
+
+.flexrowprice{
+    width: auto;
+    flex: 1 0 auto;
+}
+
+.imgprice{
+    text-align: right;
+    font-size: 35px;
+    line-height: 50px;
+}
+
+/* .cartcheckout{
+    flex: 0 0 auto;
+    width: auto;
+    background-color: aquamarine;
+    justify-content: flex-end;
+} */
+
+.carttotal{
+    text-align: right;
+    margin-left: 250px;
+    font-size: 35px;
+    line-height: 10px;
+}
+
+.cartprice{
+    text-align: right;
+    font-size: 35px;
+    line-height: 10px;
+}
+
+.flexcartrowleft{
+    display: flex;
+    width: auto;
+    margin: 10px;
+    /* flex: 1 0 auto; */
+    justify-content: flex-end;
+    /* justify-content: space-between; */
+}
+
+
+
+.hrBottom{
+    border: 4px solid black;
+}
+
+
+.dropdown{
+    display: block;
+}
+
+/* Styling for displayed cart items: text and images  */
+.remove{
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+
+.imgdetail{
+    display: block;
+    box-align: center;
+    margin: auto;
+    width: 600px;
+    height: 600px;
+    border: 3px solid black;
+}
+
+/* Styling for detail items: image and text */
+/* 
+.textbox{
+    display: block;
+    box-align: center;
+    margin: auto;
+    width: 375px;
+    height: 200px;
+} */
+
+
+.detailscontainer{
+    width: auto;
+    margin: 50px 200px 0 80px;
+    display: flex;
+    
+    /* align-items: flex-start;
+    justify-content: space-evenly; */
+}
+
+.flexdetailleft{
+    display: flex;
+    flex: 0 0 auto;
+    width: 800px;
+}
+
+.flexdetailright{
+    display: flex;
+    width: 400px;
+    height: 600px;
+    margin: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.detailtextbox{
+    /* flex: 0 0 auto; */
+    /* margin: auto;
+    width: 375px;
+    height: 200px; */
+    width: auto;
+}
+
+.detailsubtext{
+    display: block;
+    box-align: center;
+    margin: auto;
+    font-size: 30px;
+    word-wrap: break-word;
+}
+
+/* .dropdownbox{
+        display: flex;
+        width: auto;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        flex: 0 0 auto;
+} */
+/* Styling for dropdown menus */
+.dropdown{
+    flex: 0 0 auto;
+    width: auto;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+glazediv{
+    display: block;
+    flex-direction: column;
+    box-align: center;
+    margin: auto;
+    font-size: 50px;
+}
+
+packdiv{
+    display: block;
+    box-align: center;
+    margin: auto;
+}
+
+/* Styling for "add to cart" section at the bottom of the details page */
+.addcartblock{
+    width: auto;
+}
+
+#addcart{
+    display:inline-block;
+    width: auto;
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}

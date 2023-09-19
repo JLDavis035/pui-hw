@@ -107,7 +107,7 @@ button{
     box-align: center;
     margin: auto;
     width: 400px;
-    font-size: 100%;
+    font-size: 12px;
     line-height: 3px;
     word-wrap: break-word;
 }
@@ -156,9 +156,11 @@ button{
 
 /* Styling for dropdown menus */
 .dropdown{
-    display: block;
-    box-align: center;
-    margin: auto;
+    /* display: block; */
+    /* box-align: center; */
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 glazediv{
