@@ -1,4 +1,4 @@
-/* styling for lines on pages */
+/* Univeral styling */
 body{
     padding: 5px;
     font-family: Arial, Helvetica, sans-serif;
@@ -30,6 +30,7 @@ select{
 label{
     font-size: 30px;
 }
+
 /* styling for buttons */
 button{
     background-color: yellow;
@@ -39,17 +40,9 @@ button{
     padding: 15px 40px;
 }
 
-
 .pagecontainer{
     width: auto;
 }
-/* styling for the main section of each page */
-/* .container{
-    width: 925px;
-    margin: 100px auto;
-    display: block;
-    box-align: center;
-} */
 
 /* styling for logo and nav bar */
 .flexnav{
@@ -87,17 +80,6 @@ button{
     padding: 20px 50px 0 0;
     justify-content: flex-end;    
 }
-
-/* .clickednav{
-    width: auto;
-    /* height: 50px;
-    box-sizing: border-box;
-    align-items: center; 
-    
-    background-color: yellow;
-    */
-    /* margin: 30px 50px 20px 80px;
-} */ 
 
 .navtextbox{
     width: auto;
@@ -189,6 +171,7 @@ button{
     border: 5px solid black;
 }
 
+/* flexboxes */
 .flexcart{
     width: auto;
     margin-left: 475px;
@@ -231,13 +214,6 @@ button{
     line-height: 50px;
 }
 
-/* .cartcheckout{
-    flex: 0 0 auto;
-    width: auto;
-    background-color: aquamarine;
-    justify-content: flex-end;
-} */
-
 .carttotal{
     text-align: right;
     margin-left: 250px;
@@ -255,12 +231,8 @@ button{
     display: flex;
     width: auto;
     margin: 10px;
-    /* flex: 1 0 auto; */
     justify-content: flex-end;
-    /* justify-content: space-between; */
 }
-
-
 
 .hrBottom{
     border: 4px solid black;
@@ -288,23 +260,12 @@ button{
 }
 
 /* Styling for detail items: image and text */
-/* 
-.textbox{
-    display: block;
-    box-align: center;
-    margin: auto;
-    width: 375px;
-    height: 200px;
-} */
 
 
 .detailscontainer{
     width: auto;
     margin: 50px 200px 0 80px;
     display: flex;
-    
-    /* align-items: flex-start;
-    justify-content: space-evenly; */
 }
 
 .flexdetailleft{
@@ -322,11 +283,8 @@ button{
     align-items: flex-start;
     justify-content: space-between;
 }
+
 .detailtextbox{
-    /* flex: 0 0 auto; */
-    /* margin: auto;
-    width: 375px;
-    height: 200px; */
     width: auto;
 }
 
@@ -338,14 +296,6 @@ button{
     word-wrap: break-word;
 }
 
-/* .dropdownbox{
-        display: flex;
-        width: auto;
-        height: 200px;
-        margin-left: auto;
-        margin-right: auto;
-        flex: 0 0 auto;
-} */
 /* Styling for dropdown menus */
 .dropdown{
     flex: 0 0 auto;
@@ -356,24 +306,15 @@ button{
 
 }
 
-
-glazediv{
-    display: block;
-    flex-direction: column;
-    box-align: center;
-    margin: auto;
-    font-size: 50px;
-}
-
-packdiv{
-    display: block;
-    box-align: center;
-    margin: auto;
-}
-
 /* Styling for "add to cart" section at the bottom of the details page */
 .addcartblock{
+    display: flex;
     width: auto;
+    justify-content: space-between;
+}
+
+.detailsbutton{
+    margin-left: 21px;
 }
 
 #addcart{

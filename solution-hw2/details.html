@@ -41,48 +41,49 @@
 <!-- The code blocks below display the original cinnamon roll with a text box beneath -->
     <div class="detailscontainer">
 
+    <!-- The code block below sets up flexboxes. Distinct left and right flexboxes are used -->
         <div class="flexdetailleft">
             <img class="imgdetail" src="../assets/products/original-cinnamon-roll.jpg" alt="original cinnamon roll">
         </div>
+
+    <!-- The code below sets up rhw right flexbox and children -->
         <div class="flexdetailright">
 
             <div class="detailtextbox">
                 <p class="detailsubtext">Customize our delicious, hand-made cinnamon roll to your liking!</p>
             </div>
 
+        <!-- The code blocks below are dropdown menus. Code reference: https://www.w3schools.com/tags/tag_select.asp -->
             <div class="dropdown">
-                    <label class="displaylabel">Glazing:</label>
-                    <div class="glazediv">
-                        <select name="glaze">
-                            <option value="Keep original">Keep original</option>
-                            <option value="Sugar milk">Sugar milk</option>
-                            <option value="Vanilla milk">Vanilla milk</option>
-                            <option value="Double chocolate">Double chocolate</option>
-                        </select>
-                    </div>
-
-                <label class="displaylabel">Pack size:</label>
-
-                <div class="packdiv">
-                    <select name="packsize" class="packmenu">
-                        <option value="1">1</option>
-                        <option value="3">3</option>
-                        <option value="6">6</option>
-                        <option value="12">12</option>
+                <label class="displaylabel">Glazing:</label>
+                <div class="glazediv">
+                    <select name="glaze">
+                        <option value="Keep original">Keep original</option>
+                        <option value="Sugar milk">Sugar milk</option>
+                        <option value="Vanilla milk">Vanilla milk</option>
+                        <option value="Double chocolate">Double chocolate</option>
                     </select>
                 </div>
-                
+
+            <label class="displaylabel">Pack size:</label>
+
+            <div class="packdiv">
+                <select name="packsize" class="packmenu">
+                    <option value="1">1</option>
+                    <option value="3">3</option>
+                    <option value="6">6</option>
+                    <option value="12">12</option>
+                </select>
+            </div>
         </div>
 
-        <div class="addcartblock">
+    <!-- THe code block below displays the price and add to cart button -->
+            <div>
             <p id="addcart">$ 2.49</p>
-                <button>
+                <button class="detailsbutton">
                     Add to Cart
                 </button>
-                </div>
             </div>
     </div>
-
-<!-- The code blocks below are dropdown menus. Code reference: https://www.w3schools.com/tags/tag_select.asp -->
 </body>
 </html>
