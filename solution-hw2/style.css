@@ -142,14 +142,12 @@ button{
 
 .imggallery{
     display: block;
-    box-align: center;
     margin: auto;
     width: 400px;
     height: 400px;
     border: 5px solid black;
 }
 .gallerytxt{
-    box-align: center;
     margin: auto;
     width: 400px;
     font-size: 35px;
@@ -252,7 +250,6 @@ button{
 
 .imgdetail{
     display: block;
-    box-align: center;
     margin: auto;
     width: 600px;
     height: 600px;
@@ -290,7 +287,6 @@ button{
 
 .detailsubtext{
     display: block;
-    box-align: center;
     margin: auto;
     font-size: 30px;
     word-wrap: break-word;
