@@ -1,7 +1,7 @@
 let totalPrice = document.querySelector("#addcart");
 let newprice;
 
-//Glazing Object
+//Objects
 const glazing = {
     original: 0,
     sugarmilk: 0,
@@ -34,30 +34,32 @@ const packnames = {
 //Glazing Dropdown
 const glazingOptions = Object.entries(glazing);
 const glazeDropdown = document.getElementById("glazingoptions");
+
 for (element of glazingOptions){
   let newOption = document.createElement('option');
-  let optionname = document.createTextNode(glazingnames[element[0]]);
-  newOption.appendChild(optionname);
+  let optionName = document.createTextNode(glazingnames[element[0]]);
+  newOption.appendChild(optionName);
   newOption.setAttribute('value', String(element[1])),
   glazeDropdown.appendChild(newOption);
 }
 
+
+
 //Pack Dropdown
 const packOptions = Object.entries(packnames);
-// const packValue = Object.entries(pack)
 const packDropdown = document.querySelector(".packmenu");
 
 for (element of packOptions){
 
   let newOption = document.createElement('option');
-  let optionname = document.createTextNode(packnames[element[0]]);
-  newOption.appendChild(optionname);
+  let optionName = document.createTextNode(packnames[element[0]]);
+  newOption.appendChild(optionName);
   newOption.setAttribute('value', String(element[0]));
   packDropdown.appendChild(newOption);
 }
 
-console.log(packDropdown.value);
 
+//Cost Section:
 const basePrice = 2.49;
 let glazingPrice = glazing.original;
 let packPrice = pack.one;
@@ -66,27 +68,27 @@ let packPrice = pack.one;
 function glazingChange(element) {
     const priceChange = element.value;
     glazingPrice = parseFloat(priceChange);
-    console.log(glazingPrice);
 
     newPriceCalc();
   }
 
 
-//TO DO:
+
   function packChange(element) {
     const priceChange = element.value;
     packPrice = parseFloat(priceChange);
+
     newPriceCalc();
   }
 
-console.log(parseFloat("3.98888"));
+
 //Calc Price:
 function newPriceCalc(){
   newPrice = (basePrice + glazingPrice) * packPrice;
   newPrice = newPrice.toFixed(2);
   addNewPrice();
-  console.log(newPrice);
 }
+
 
 //Adds price to HTML file:
 function addNewPrice(){
