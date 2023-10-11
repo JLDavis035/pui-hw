@@ -1,0 +1,96 @@
+<!DOCTYPE html> 
+<html lang="en-us"> 
+<head> 
+    <meta charset="UTF-8">
+    <meta name="author" content="Jennifer Davis"> 
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./js/rollsData.js"></script>
+    <script defer src="./js/scriptTest.js"></script>
+    <title>Bun Bun Bake Shop</title> 
+</head>
+
+
+<body>
+    <div class="flexnav">
+    
+        <!-- The code block below is the left flexbox child, which contains the logo with a hyperlink to the products page -->
+            <div class="navleft">
+                <a class="logo" href="index.html"><img class="logo" src="../assets/logo/logo-01.svg" alt="logo"></a>
+            </div>
+    
+        <!-- The code block below is the right flexbox child, and also acts as a flexbox parent for the product and cart child, hr child, and p child -->
+            <div class="navright">
+                <div class="flexnavtext">
+                <!-- The code block below acts as navigation to the main pages. There are hyperlinks to the main (index) page and the details page  -->
+                    <div class="navtextbox">
+                        <p><a class="navtext" href="index.html">PRODUCTS</a></p>
+                    </div>
+                    <div class="navtextbox"> 
+                        <p><a class="navclicked" href="cart.html">CART</a></p>
+                    </div>
+                </div>
+    
+                <!-- The line of code below displays the line towards the top of the page, contained within the flexbox -->
+                <hr class="galleryline">
+    
+                <div class="titlepbox">
+                    <p class="titlep">Shopping cart</p>
+                </div>
+            </div>
+        </div>
+
+        
+<!-- The code block below is the shopping cart section, which shows the 2 cinnamon rolls and their information. Flexboxes were contained within each other 
+    to create the 2 rows of information, black line, total, and checkout-->
+    <div class="container">
+        <div class="flexcart">
+
+        <!-- Row 1 -->
+            <div class="rollContainer">
+                <template class = "rollTemplate">
+                    <div class = "flexcartrow">
+                    <div class="flexcartimg">
+                        <img class="imgcart">
+                        <p class="remove">Remove</p>
+                        </div>
+        
+                        <div class="flexrowtext">
+                            <p class="subtextTitle"></p>
+                            <p class="subtextGlazing"></p>
+                            <p class="subtextPack"></p>
+                        </div>
+        
+                        <div class="flexrowprice">
+                            <p class="imgprice"></p>
+                        </div>
+                    </div>
+                    </template>
+                </div>
+
+            </div>
+
+
+        <!-- Row 3 -->
+            <div class="flexhr">
+                <hr class="hrBottom">
+            </div>
+
+        <!-- Row 4 -->
+            <div class="flexcarttotal">
+                <div>
+                    <p class="carttotal">Total: </p>
+                </div>
+                <div>
+                    <p class="cartprice"></p>
+                </div>
+            </div>
+            
+    <!-- Row 5 -->
+            <div class="flexcartrowleft">
+                <div>
+                    <button class="b2">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
