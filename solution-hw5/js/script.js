@@ -34,12 +34,7 @@ const pack = {
   12: 10,
 }
 
-const packnames = {
-  1: "1",
-  3: "3",
-  5: "6",
-  10: "12",
-}
+
 
   function addNewRoll(rollType, rollGlazing, packSize, rollPrice) {
     const rollEntry = new Roll(rollType, rollGlazing, packSize, rollPrice);
@@ -49,6 +44,8 @@ const packnames = {
     return rollEntry;
   }
   
+
+
   function createElement(rollEntryDisplay) {
     const emptyTemplate = document.querySelector('.rollTemplate');
     const clone = emptyTemplate.content.cloneNode(true);
@@ -69,28 +66,30 @@ const packnames = {
     updateElement(rollEntryDisplay);
   }
   
+
+
   function updateElement(rollEntry) {
     const rollImageElement = rollEntry.element.querySelector(".imgcart");
     const rollTitleElement = rollEntry.element.querySelector(".subtextTitle");
     const rollGlazeElement = rollEntry.element.querySelector(".subtextGlazing");
     const rollPackElement = rollEntry.element.querySelector(".subtextPack");
-    // const rollCostElement = rollEntry.element.querySelector(".imgprice");
-    
-    // let rollCost = (rollEntry.basePrice + glazing[rollEntry.glazing]) * pack[rollEntry.size];
-    // rollCost = rollCost.toFixed(2)
+
     rollImageElement.src = "../assets/products/" + rolls[rollEntry.type].imageFile;
     rollTitleElement.innerText = rollEntry.type + " Cinnamon Roll";
     rollGlazeElement.innerText = rollEntry.glazing;
     rollPackElement.innerText = "Pack Size: " + rollEntry.size;
-    // rollCostElement.innerText = "$" + rollCost;
 
   }
   
+
+
   function deleteRoll(rollEntry) {
     rollEntry.element.remove();
     cartSet.delete(rollEntry);
     updateRollArray(rollEntry);
   }
+
+
 
   const rollOne = addNewRoll("Apple", "Original", 3, 3.49);
 
@@ -107,17 +106,21 @@ const packnames = {
     calcRollPrice(rollEntry);
   }
 
+
+
   function calcRollPrice(rollEntry){
 
     let rollCost = (rollEntry.basePrice + glazing[rollEntry.glazing]) * pack[rollEntry.size];
-    rollCost = rollCost.toFixed(2)
+    rollCost = rollCost.toFixed(2);
 
     const rollCostElement = rollEntry.element.querySelector(".imgprice");
     rollCostElement.innerText = "$" + rollCost;
 
-    cartPriceArray.push(rollCost)
+    cartPriceArray.push(rollCost);
     calcTotalPrice();
   }
+
+
 
   function updateRollArray(rollEntry){
     cartPriceArray = [];
@@ -134,6 +137,7 @@ const packnames = {
   }
 
 
+
   function calcTotalPrice(){
     let priceTotal = document.querySelector(".cartprice");
 
@@ -143,24 +147,3 @@ const packnames = {
     }
     priceTotal.innerText = "$" + totalCartPrice.toFixed(2);
 }
-
-
-
-
-//   function calcTotalPrice(rollEntry){
-//   let totalCartPrice = 0;
-//   for(const rollCost of cartPriceArray){
-//       totalCartPrice = totalCartPrice + (parseFloat(cartPriceArray));
-//       console.log(totalCartPrice);
-//   }
-//   }
-
-//   function calcTotalPrice(){
-//     let totalCartPrice = 0;
-//     for(const rollCost of cartPriceArray){
-//         totalCartPrice = totalCartPrice + (parseFloat(cartPriceArray));
-//     }
-//     return totalCartPrice;
-//   }
-
-  console.log(cartPriceArray);
