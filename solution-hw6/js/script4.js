@@ -1,7 +1,7 @@
 //Detail Page JS
 
 let cart = [];
-if (localStorage){
+if (localStorage.getItem('storedRolls')){
   const addedRollString = localStorage.getItem('storedRolls');
   const addedRoll = JSON.parse(addedRollString);
   cart = addedRoll;
@@ -149,7 +149,7 @@ function saveToLocalStorage() {
 
   const addedRollString = JSON.stringify(addedRoll);
 
-  localStorage.setItem('storedRolls', addedRollString);
+  localStorage.setItem("storedRolls", addedRollString);
 }
 
 
