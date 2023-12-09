@@ -44,10 +44,10 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 var camera = new THREE.PerspectiveCamera( 50, window.innerWidth / window.innerHeight, 1, 20000 );
 camera.position.set( 100, 900, 3000 );
 
-//Scene
+//Store HTML element as a variable
 const forest = document.getElementById("treescene");
 
-//Storing treescene div width & height
+//Store treescene div width & height
 let width = forest.offsetWidth;
 let height = forest.offsetHeight;
 
@@ -57,28 +57,30 @@ var renderer = new THREE.WebGLRenderer({ alpha: false });
 renderer.setClearColor( 0x000000, 0 );
 renderer.setPixelRatio( window.devicePixelRatio );
 renderer.setSize(width, height);
-// renderer.setSize(window.innerWidth, window.innerHeight);
 forest.appendChild(renderer.domElement);
 	
+
+
  // Load the Orbitcontroller
 var orbit = new OrbitControls( camera, renderer.domElement ); 
 orbit.autoRotate = true;
 orbit.enableZoom = false;
 
+//Set parameters so camera can't go too far up or down
 orbit.minPolarAngle = ( 1 );
 orbit.maxPolarAngle = ( 1.5 );
 
-
+// "rgb(156, 221, 213)"
 
 var lightGreen = new THREE.Color( "rgb(174, 238, 235)" );
 var lightBlue = new THREE.Color( "rgb(166, 226, 249)" );
-var lightFog = new THREE.Color( "rgb(156, 221, 213)" );
+var lightFog = new THREE.Color( "rgb(128, 248, 248)" );
 
-
-// scene.background = ( transparent )
 scene.fog = new THREE.Fog( lightFog, 1, 4500 );
 
- // Load Light
+
+
+ // Load light
 var ambientLight = new THREE.AmbientLight( lightGreen, 2 );
 scene.add( ambientLight );
 			
@@ -86,8 +88,10 @@ var directionalLight = new THREE.DirectionalLight( lightBlue, 10 );
 directionalLight.position.set( 0, 1, 1 ).normalize();
 scene.add( directionalLight );				
 
- // glTf Loader
-var loader = new GLTFLoader();				
+ // gltf Loader
+var loader = new GLTFLoader();	
+
+//tree 3D objects
 	loader.load( './assets/models/low_poly_tree_concept/scene.gltf', function ( gltf ) { 
 	var object = gltf.scene;				
 	object.scale.set( 2, 2, 2 );			   
@@ -132,14 +136,15 @@ var loader = new GLTFLoader();
 		});	
 	loader.load( './assets/models/low_poly_tree_concept/scene.gltf', function ( gltf ) { 
 		var object = gltf.scene;				
-		object.scale.set( 2, 2, 2 );			   
-		object.position.x = 0;		 
+		object.scale.set( 1.5, 1.75, 1.5 );			   
+		object.position.x = -200;		 
 		object.position.y = 0;				  
-		object.position.z = 0;	
-		object.rotation.y = -40;			   
+		object.position.z = 100;	
+		object.rotation.y = 10.5;			   
 		
 		scene.add( gltf.scene );
 		});	
+
 	loader.load( './assets/models/low_poly_tree_concept/scene.gltf', function ( gltf ) { 
 		var object = gltf.scene;				
 		object.scale.set( 1.5, 1.5, 1.75 );			   
@@ -252,6 +257,17 @@ var loader = new GLTFLoader();
 
 	loader.load( './assets/models/low_poly_tree_concept/scene.gltf', function ( gltf ) { 
 		var object = gltf.scene;				
+		object.scale.set( 1.75, 2, 1.75 );			   
+		object.position.x = 0;		 
+		object.position.y = 0;				  
+		object.position.z = 900;	
+		object.rotation.y = 7.9;			   
+		
+		scene.add( gltf.scene );
+		});	
+
+	loader.load( './assets/models/low_poly_tree_concept/scene.gltf', function ( gltf ) { 
+		var object = gltf.scene;				
 		object.scale.set( 1.75, 1.75, 1.75 );			   
 		object.position.x = 300;		 
 		object.position.y = 0;				  
@@ -272,12 +288,14 @@ var loader = new GLTFLoader();
 		scene.add( gltf.scene );
 		});	
 
+//animating trees so they will render
 function animate() {
 	render();
 	orbit.update();
 	requestAnimationFrame( animate );
 	}
 
+//rendering
 function render() {
 	renderer.render( scene, camera );
 	}
