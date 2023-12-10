@@ -3,7 +3,7 @@
 body{
     background-image: linear-gradient( rgb(77, 220, 201), rgb(14, 62, 71));
     margin: auto;
-    min-width: 970px
+    min-width: 1080px;
 }
 
 a{
@@ -216,7 +216,7 @@ h3{
     margin: 20px 50px 20px 50px;
 }
 .projecttxtbox{
-    flex: 2 0 auto;
+    flex: 2 2 auto;
     margin: auto;
     width: 534px;
     height: 340px;
