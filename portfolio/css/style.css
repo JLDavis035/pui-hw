@@ -3,6 +3,7 @@
 body{
     background-image: linear-gradient( rgb(77, 220, 201), rgb(14, 62, 71));
     margin: auto;
+    min-width: 970px
 }
 
 a{
@@ -240,8 +241,8 @@ h3{
 
 /* footer styling */
 .footerbox{
-    width: 1441px;
-    height: 209px;
+    width: auto;
+    /* height: 209px; */
     margin: auto;
     box-sizing: border-box;
     color: rgba(5, 17, 21, 1);
