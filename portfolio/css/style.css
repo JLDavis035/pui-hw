@@ -1,9 +1,5 @@
 /* General styling */
 
-html{
-    width: auto;
-}
-
 body{
     background-image: linear-gradient( rgb(77, 220, 201), rgb(14, 62, 71));
     margin: auto;
@@ -21,11 +17,6 @@ a{
     margin: 0;
 }
 
-#downarrow{
-    margin: auto;
-    width: 300px;
-    height: 150px;
-}
 .container{
     flex-direction: column;
     box-sizing: border-box;
@@ -126,6 +117,10 @@ a{
 
 
 
+
+
+
+
 /* About section styling */
 .about{
     width: auto;
@@ -188,11 +183,6 @@ a{
 }
 
 
-
-
-
-
-
 /* Project section styling */
 h3{
     width: 100%;
@@ -222,17 +212,8 @@ h3{
     transform: scale(1.05);
 }
 
-/* .projectimagebox{
-    width: 40%;
-    height: 40%;
-    flex: 0 2 auto;
-    margin: auto;
-} */
 
 .projectimage{
-    /* width: 100%;
-    height: 100%; */
-    /* margin: 20px 50px 20px 50px; */
     width: 40%;
     height: 40%;
     flex: 0 2 auto;
@@ -247,7 +228,6 @@ h3{
 
 .subheader{
     width: 100%;
-    /* margin: 0 0 30px 0; */
     margin: auto;
     color: #d0d0d0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -266,7 +246,6 @@ h3{
 /* footer styling */
 .footerbox{
     width: auto;
-    /* height: 209px; */
     margin: auto;
     box-sizing: border-box;
     color: rgba(5, 17, 21, 1);
@@ -282,12 +261,12 @@ h3{
     display: flex;
     justify-content: flex-start;
     margin: 0;
-    width: 175px;
+    width: 80%;
 }
 
 .footericons{
     flex: 0 0 auto;
-    margin: 10px;
+    margin: .5%;
 }
 
 .footericonimage{
@@ -309,34 +288,51 @@ h3{
 }
 
 
+
+
+
+
+
+
+
+
+
 /* About page styling */
 
-.aboutcontainer{
+.subpage{
+    background: fixed;
+    background-image: linear-gradient( rgb(17, 158, 144), rgb(14, 62, 71));
+}
+
+.projectcontainer{
     display: flex;
+    justify-content: flex-start;
     margin: auto;
-    padding: 25px;
+    padding: 5% 2% 2% 2%;
     align-items: baseline;
 }
 
-.aboutpagebox{
-    flex: 0 0 auto;
+.projectpbox{
+    flex: 2 0 auto;
     display: flex;
     align-items: baseline;
-    width: 1232px;
-    height: 814px;
+    width: 90%;
+    max-width: 1232px;
+    height: 100%;
     box-sizing: border-box;
     border-radius: 45px;
-    margin: 35px 35px 150px 35px;
-    padding: 30px;
+    margin: auto;
+    padding: 5%;
     background: rgba(187, 190, 190, 0.14);
     box-shadow: -10px 10px 25px 5px rgba(14, 27, 32, 0.25);
 }
 
 .backcaret{
-    flex: 0 0 auto;
-    margin: 0;
+    flex: 0 2 auto;
+    margin: auto 2% auto auto;
 }
-.aboutflexbox1{
+
+.projectimageflex{
     flex: 0 2 auto;
     display: flex;
     margin: auto;
@@ -344,51 +340,151 @@ h3{
     align-items: baseline;
 }
 
-#aboutpfpbox{
+.projectimage{
     flex: 0 2 auto;
-    margin: auto;
-    width: 491px;
+    width: 90%;
+    height: 90%;
+    margin: 2%;
 }
 
-#aboutpfpimage{
-    width: 443px;
-    height: 443px;
-    margin: 0 0 0 50px;
-}
-
-#aboutpagetextbox{
+.projecttextbox{
     flex: 2 0 auto;
-    margin: auto;
-    width: 550px;
+    margin: auto auto auto 5%;
+    width: 60%;
 }
 
-.aboutpagetext{
-    width: 550px;
-    margin: 0 0 10px 90px;
+.projecttext{
+    width: 100%;
+    margin: auto;
     color: #e9e9e9;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 28px;
+    font-size: 150%;
     font-weight: 200;
 }
 
-#aboutpageheader{
+.projectheader{
+    color: #FFF;
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: auto auto 2% auto;
+    font-size: 250%;
+    font-weight: 300;
+}
+
+.projectsubheader{
     color: #FFF;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 10px 0 10px 90px;
-    font-size: 55px;
+    margin: auto;
+    font-size: 120%;
+    font-weight: 100;
+}
+
+.projectsection{
+    color: #FFF;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 5% auto auto auto;
+    font-size: 150%;
+    font-weight: 300;
+}
+
+.aboutfootercontainer{
+    flex: 0 2 auto;
+    width: 80%;
+    margin: auto;
+    order: 5;
+}
+
+.footericonsflexbox{
+    display: flex;
+    justify-content: center;
+    margin: 10% auto auto auto;
+    width: 80%;
+}
+
+.aboutfootericons{
+    flex: 0 0 auto;
+    margin: 5%;
+}
+
+.aboutfootertitle{
+    color: #FFF;
+    margin: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 200%;
+    font-weight: 300;
+}
+
+/* Project Pages Styling */
+.aboutcontainer{
+    display: flex;
+    justify-content: flex-start;
+    margin: auto;
+    padding: 5% 2% 2% 2%;
+    align-items: baseline;
+}
+
+.aboutpbox{
+    flex: 2 0 auto;
+    display: flex;
+    align-items: baseline;
+    width: 90%;
+    max-width: 1232px;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 45px;
+    margin: auto;
+    padding: 5%;
+    background: rgba(187, 190, 190, 0.14);
+    box-shadow: -10px 10px 25px 5px rgba(14, 27, 32, 0.25);
+}
+
+.backcaret{
+    flex: 0 2 auto;
+    margin: auto 2% auto auto;
+}
+
+.aboutimageflex{
+    flex: 0 2 auto;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+#aboutpfpimage{
+    flex: 0 2 auto;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+#abouttextbox{
+    flex: 2 0 auto;
+    margin: auto auto auto 5%;
+    width: 60%;
+}
+
+.abouttext{
+    width: 100%;
+    margin: auto;
+    color: #e9e9e9;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 150%;
+    font-weight: 200;
+}
+
+#aboutheader{
+    color: #FFF;
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: auto auto 2% auto;
+    font-size: 200%;
     font-weight: 300;
 }
 .aboutsubheader{
     color: #FFF;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 40px 0 20px 90px;
-    font-size: 45px;
+    margin: 5% auto auto auto;
+    font-size: 150%;
     font-weight: 300;
 }
-
-.aboutpagefbox{
-    flex: 0 2 auto;
-    margin: 50px 0 0 150px;
-    order: 5;
-}
-
