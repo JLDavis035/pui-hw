@@ -201,7 +201,6 @@ h3{
     align-items: baseline;
     box-sizing: border-box;
     border-radius: 75px;
-    /* margin: 35px; */
     margin: 25px auto 25px auto;
     background: rgba(187, 190, 190, 0.10);
     box-shadow: -10px 10px 25px 5px rgba(14, 27, 32, 0.25);
@@ -213,13 +212,13 @@ h3{
 }
 
 
-.projectimage{
+.workimage{
     width: 40%;
     height: 40%;
     flex: 0 2 auto;
     margin: auto;
 }
-.projecttxtbox{
+.worktxtbox{
     flex: 2 0 auto;
     margin: auto auto auto 5%;
     width: 50%;
@@ -234,7 +233,7 @@ h3{
     font-size: 140%;
     font-weight: 100;
 }
-.projecttext{
+.worktext{
     width: 100%;
     margin: 5% auto auto auto;
     color: #d4d5d5;
