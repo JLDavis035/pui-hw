@@ -1,6 +1,6 @@
 //Swapping Adjectives////////////////////////////////////////////
 
-var words = ["Creative", "Environmentalist", "Designer", "Plant-lover", "Artist"];
+var words = ["Creative", "Environmentalist", "UX Designer", "Plant-lover", "Artist"];
 var adj = document.getElementById("adj");
 
 var timer = 0;
