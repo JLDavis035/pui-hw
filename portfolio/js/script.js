@@ -70,7 +70,7 @@ orbit.enableZoom = false;
 orbit.minPolarAngle = ( 1 );
 orbit.maxPolarAngle = ( 1.5 );
 
-// "rgb(156, 221, 213)"
+
 
 var lightGreen = new THREE.Color( "rgb(174, 238, 235)" );
 var lightBlue = new THREE.Color( "rgb(166, 226, 249)" );

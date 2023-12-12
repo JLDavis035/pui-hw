@@ -53,6 +53,8 @@ a{
     display: inline;
 }
 
+
+
 /* Main header styling */
 .name{
     margin: 0;
@@ -89,6 +91,7 @@ a{
 }
 
 
+
 /* Nav styling */
 .navbar{
     display: flex;
@@ -116,11 +119,6 @@ a{
 
 
 
-
-
-
-
-
 /* About section styling */
 .about{
     width: auto;
@@ -130,11 +128,9 @@ a{
     display: flex;
     align-items: baseline;
     width: 100%;
-    max-width: 1226px;
     height: 150%;
     box-sizing: border-box;
     border-radius: 75px;
-    /* margin: 35px 35px 150px 35px; */
     margin: auto;
     padding: 45px;
 }
@@ -145,7 +141,6 @@ a{
     height: 150%;
     box-sizing: border-box;
     border-radius: 75px;
-    /* margin: 35px 35px 150px 35px; */
     margin: auto;
     background: rgba(187, 190, 190, 0.14);
     box-shadow: -10px 10px 25px 5px rgba(14, 27, 32, 0.25);
@@ -412,6 +407,14 @@ h3{
     font-size: 200%;
     font-weight: 300;
 }
+
+
+
+
+
+
+
+
 
 /* Project Pages Styling */
 .aboutcontainer{
